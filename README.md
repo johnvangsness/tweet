@@ -14,4 +14,3 @@ Note: This is based on the tutorial located here: http://www.blog.pythonlibrary.
 * Activate Virtual Environment by cding into the project folder and typing . bin/activate
 * Next run: FLASK_APP=main.py flask run
 * Now in broweser visit http://127.0.0.1:5000
-*
