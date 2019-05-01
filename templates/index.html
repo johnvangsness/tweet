@@ -1,0 +1,28 @@
+<doctype html>
+<head>
+    <title>TGTTI</title>
+</head>
+
+<h2>Donald Trump's Guide to the Internet</h2>
+
+<p><p>
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+{% from "_formhelpers.html" import render_field %}
+<form method=POST>
+  <dl>
+    {{ render_field(form.select) }}
+    <p>
+    {{ render_field(form.search) }}
+  </dl>
+  <p><input type=submit value=Search>
+</form>
